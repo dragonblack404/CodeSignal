@@ -1,11 +1,13 @@
-package dad.codesignal;
+package dad.codesignal02;
 
 import static org.junit.Assert.*;
 
 import org.junit.Before;
 import org.junit.Test;
 
-public class adjacentElementsProductTest {
+import dad.codesignal.EdgeOfTheOcean;
+
+public class AdjacentElementsProductTest {
 
 	private EdgeOfTheOcean eoto;
 

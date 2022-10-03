@@ -1,9 +1,11 @@
-package dad.codesignal;
+package dad.codesignal02;
 
 import static org.junit.Assert.*;
 
 import org.junit.Before;
 import org.junit.Test;
+
+import dad.codesignal.EdgeOfTheOcean;
 
 public class ShapeAreaTest {
 

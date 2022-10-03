@@ -19,4 +19,23 @@ public class EdgeOfTheOcean {
 		return n * n + (n - 1) * (n - 1);
 	}
 
+	@SuppressWarnings("unused")
+	public int makeArrayConsecutive(int[] statues) {
+		int min, max = statues[0], longArray = statues.length;
+		if (longArray > 1)
+			for (int i = 1; i < statues.length; i++) {
+				if (statues[i] < max)
+					min = statues[i];
+				else {
+					min = max;
+					max = statues[i];
+				}
+			}
+		else
+			return max - 1;
+
+		return max - longArray;
+
+	}
+
 }
