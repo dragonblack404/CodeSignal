@@ -7,7 +7,7 @@ import org.junit.Test;
 
 import dad.codesignal.EdgeOfTheOcean;
 
-public class MakeArrayConsecutiveTest {
+public class MakeArrayConsecutive2Test {
 
 	EdgeOfTheOcean eoto;
 	
@@ -19,31 +19,31 @@ public class MakeArrayConsecutiveTest {
 	@Test
 	public void test01() {
 		int[] lista = {6,2,3,8};
-		assertEquals(4, eoto.makeArrayConsecutive(lista));
+		assertEquals(3, eoto.makeArrayConsecutive2(lista));
 	}
 	
 	@Test
 	public void test02() {
-		int[] lista = {4};
-		assertEquals(3, eoto.makeArrayConsecutive(lista));
+		int[] lista = {0,3};
+		assertEquals(2, eoto.makeArrayConsecutive2(lista));
 	}
 	
 	@Test
 	public void test03() {
-		int[] lista = {1};
-		assertEquals(0, eoto.makeArrayConsecutive(lista));
+		int[] lista = {5,4,6};
+		assertEquals(0, eoto.makeArrayConsecutive2(lista));
 	}
 
 	@Test
 	public void test04() {
-		int[] lista = {14};
-		assertEquals(13, eoto.makeArrayConsecutive(lista));
+		int[] lista = {6,3};
+		assertEquals(2, eoto.makeArrayConsecutive2(lista));
 	}
 	
 	@Test
 	public void test05() {
-		int[] lista = {2};
-		assertEquals(1, eoto.makeArrayConsecutive(lista));
+		int[] lista = {1};
+		assertEquals(0, eoto.makeArrayConsecutive2(lista));
 	}
 	
 	
