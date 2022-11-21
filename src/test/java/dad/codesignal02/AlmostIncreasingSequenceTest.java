@@ -7,7 +7,7 @@ import org.junit.Test;
 
 import dad.codesignal.EdgeOfTheOcean;
 
-public class almostIncreasingSequence {
+public class AlmostIncreasingSequenceTest {
 
 	EdgeOfTheOcean eoto;
 

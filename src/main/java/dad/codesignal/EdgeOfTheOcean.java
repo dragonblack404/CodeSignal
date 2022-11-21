@@ -75,20 +75,20 @@ public class EdgeOfTheOcean {
 		return false;
 	}
 
-	public static void main(String[] args) {
-		int[] list = { 3, 5, 67, 98, 3 };
-		ArrayList<Integer> lista = new ArrayList<Integer>();
-		for (int i = 0; i < list.length; i++) {
-			lista.add(list[i]);
+	public int matrixElementsSum(int[][] matrix) {
+		int habitaciones = 0;
+		ArrayList<Integer> columnasFantasmas = new ArrayList<Integer>();
+		for (int i = 0; i < matrix.length; i++) {
+			for (int j = 0; j < matrix[0].length; j++) {
+				if (matrix[i][j] == 0 && !columnasFantasmas.contains(j))
+					columnasFantasmas.add(j);
+				if (i == 0 & matrix[i][j] != 0)
+					habitaciones = habitaciones + matrix[i][j];
+				else if (i != 0 && !columnasFantasmas.contains(j) && matrix[i][j]!=0)
+					habitaciones = habitaciones + matrix[i][j];
+			}
 		}
-		EdgeOfTheOcean eoto = new EdgeOfTheOcean();
-		System.out.println(eoto.almostIncreasingSequence(list));
-//		System.out.println(lista);
-//		lista.remove(1);
-//		System.out.println(lista);
-//		lista.add(1, 5);
-//		System.out.println(lista);
-		System.out.println(list.length);
+		return habitaciones;
 	}
 
 }
