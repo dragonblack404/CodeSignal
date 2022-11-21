@@ -23,7 +23,7 @@ public class SmoothSailing {
 		}
 		sol = new String[indices.size()];
 		for (int i = 0; i < indices.size(); i++) {
-			sol[i] = inputArray[indices.get(i)];
+			sol[i] = inputArray[indices.get(i+1)];
 		}
 		return sol;
 	}
